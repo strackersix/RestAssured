@@ -1,0 +1,54 @@
+package br.com.rest;
+
+public class User {
+	
+	private Long id;
+	private String name;
+	private Integer age;
+	private Double Salary;
+		
+	public User(String name, Integer age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+	
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+		
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Integer getAge() {
+		return age;
+	}
+	
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+	
+	public Double getSalary() {
+		return Salary;
+	}
+	
+	public void setSalary(Double salary) {
+		Salary = salary;
+	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", age=" + age + ", Salary=" + Salary + "]";
+	}
+	
+
+}
